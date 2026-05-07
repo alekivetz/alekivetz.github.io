@@ -1,4 +1,4 @@
-// Angela Lekivetz, real project and profile data sourced from her resume.
+// Angela Lekivetz, real project and profile data.
 
 const PROFILE = {
   name: "Angela Lekivetz",
