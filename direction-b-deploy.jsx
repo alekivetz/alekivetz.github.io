@@ -1,9 +1,5 @@
-// Direction B (deploy build). Same as direction-b.jsx but uses real <img>
-// tags pointing at /screenshots/<project-id>.png so visitors see the
-// dashboards. If a screenshot file is missing, the card falls back to the
-// monospace placeholder.
 
-const { useState: useStateBD } = React;
+const { useState: useStateBD, useEffect: useEffectBD, useRef: useRefBD } = React;
 
 function ProjectRowBDeploy({ project, idx }) {
   const [hover, setHover] = useStateBD(false);
@@ -29,7 +25,7 @@ function ProjectRowBDeploy({ project, idx }) {
         ) : (
           <img
             className="b-card-img"
-            src={`screenshots/${project.id}.png`}
+            src={`images/${project.id}.png`}
             alt={`${project.title} screenshot`}
             onError={() => setImgFailed(true)}
           />
@@ -65,6 +61,17 @@ function DirectionBDeploy() {
   const projects = window.PROJECTS;
   const [filter, setFilter] = useStateBD("all");
 
+  const photoRef = useRefBD(null);
+
+  useEffectBD(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) entry.target.classList.add("is-visible"); },
+      { threshold: 0.3 }
+    );
+    if (photoRef.current) observer.observe(photoRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   const allTags = Array.from(new Set(projects.flatMap((x) => x.tags))).sort();
   const visible =
     filter === "all" ? projects : projects.filter((x) => x.tags.includes(filter));
@@ -72,12 +79,7 @@ function DirectionBDeploy() {
   return (
     <div className="b-root">
       <header className="b-header">
-        <div className="b-header-left">
-          <span className="b-prompt">~/</span>
-          <span className="b-handle">alekivetz</span>
-          <span className="b-sep">/</span>
-          <span className="b-page">portfolio</span>
-        </div>
+      <div className="b-header-mark">alekivetz.portfolio</div>
         <nav className="b-nav">
           <a href="#index">index</a>
           <a href="#about">about</a>
@@ -88,17 +90,24 @@ function DirectionBDeploy() {
       </header>
 
       <section className="b-hero">
-        <div className="b-hero-meta">
-          <span>// portfolio.v1</span>
-          <span>// last build · may 2026</span>
-          <span>// status · open to roles</span>
-        </div>
-        <h1 className="b-hero-title">
-          {p.name}
-          <span className="b-cursor">▍</span>
-        </h1>
+        <p className="b-hero-eyebrow">Edmonton · Open to roles</p>
+        <h1 className="b-hero-title">{p.name}</h1>
+        <p className="b-hero-statement">Making data useful for people who don't speak data.</p>
         <p className="b-hero-role">{p.role}</p>
-        <p className="b-hero-tagline">{p.tagline}</p>
+        <ul className="b-hero-stack">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Snowflake</li>
+          <li>dbt</li>
+          <li>SQL Server</li>
+          <li>Power BI</li>
+          <li>Docker</li>
+          <li>GCP</li>
+          <li>Git</li>
+          <li>pandas</li>
+          <li>scikit-learn</li>
+          <li>XGBoost</li>
+        </ul>
       </section>
 
       <section id="index" className="b-work">
@@ -129,7 +138,7 @@ function DirectionBDeploy() {
       </section>
 
       <section id="about" className="b-about">
-        <div className="b-about-meta">// about</div>
+        <div className="b-about-meta">About Me</div>
         <div className="b-about-grid">
           <div className="b-about-prose">
             <p>
@@ -161,30 +170,26 @@ function DirectionBDeploy() {
               or data engineering.
             </p>
           </div>
-          <dl className="b-about-kv">
-            <dt>location</dt>
-            <dd>{p.location}</dd>
-            <dt>email</dt>
-            <dd><a href={`mailto:${p.email}`}>{p.email}</a></dd>
-            <dt>phone</dt>
-            <dd>{p.phone}</dd>
-            <dt>github</dt>
-            <dd><a href={p.github} target="_blank" rel="noreferrer">@alekivetz</a></dd>
-            <dt>linkedin</dt>
-            <dd><a href={p.linkedin} target="_blank" rel="noreferrer">/in/angela-lekivetz</a></dd>
-            <dt>stack</dt>
-            <dd>Python · SQL · Snowflake · dbt · SQL Server · Power BI · scikit-learn · XGBoost · Docker · GCP</dd>
-            <dt>currently</dt>
-            <dd>open to roles</dd>
-          </dl>
+          <div className="b-about-right">
+          <img src="images/angela.png" alt="Angela Lekivetz" className="b-about-photo b-fade-in" ref={photoRef} />            <dl className="b-about-kv">
+              <dt>email</dt>
+              <dd><a href={`mailto:${p.email}`}>{p.email}</a></dd>
+              <dt>phone</dt>
+              <dd>{p.phone}</dd>
+              <dt>github</dt>
+              <dd><a href={p.github} target="_blank" rel="noreferrer">@alekivetz</a></dd>
+              <dt>linkedin</dt>
+              <dd><a href={p.linkedin} target="_blank" rel="noreferrer">/in/angela-lekivetz</a></dd>
+            </dl>
+          </div>
         </div>
       </section>
 
       <section id="experience" className="b-experience">
-        <div className="b-about-meta">// experience.log</div>
+        <div className="b-about-meta">Experience</div>
         <div className="b-exp-grid">
           <div className="b-exp-col">
-            <h4 className="b-exp-label">// education</h4>
+            <h4 className="b-exp-label">Education</h4>
             <ul className="b-exp-list">
               <li>
                 <div className="b-exp-head">
@@ -203,7 +208,7 @@ function DirectionBDeploy() {
             </ul>
           </div>
           <div className="b-exp-col">
-            <h4 className="b-exp-label">// work</h4>
+            <h4 className="b-exp-label">Work</h4>
             <ul className="b-exp-list">
               <li>
                 <div className="b-exp-head">
@@ -224,7 +229,7 @@ function DirectionBDeploy() {
             </ul>
           </div>
           <div className="b-exp-col">
-            <h4 className="b-exp-label">// volunteer</h4>
+            <h4 className="b-exp-label">Volunteer</h4>
             <ul className="b-exp-list">
               <li>
                 <div className="b-exp-head">
@@ -240,8 +245,8 @@ function DirectionBDeploy() {
       </section>
 
       <footer className="b-footer">
-        <span>$ echo &quot;thanks for reading&quot; › ./portfolio.log</span>
-        <span>© 2026 · {p.name.toLowerCase()}</span>
+        <span>Let's work together —  <a href={`mailto:${p.email}`}>{p.email}</a></span>
+        <span>© 2026 · {p.name}</span>
       </footer>
     </div>
   );

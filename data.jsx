@@ -20,7 +20,6 @@ const PROJECTS = [
     tags: ["Snowflake", "dbt Core", "Python", "Power BI"],
     repo: "https://github.com/alekivetz/canadian-labour-analytics",
     accent: "teal",
-    swatch: ["#5a9e8a", "#2e5a50", "#162e28"],
   },
   {
     id: "canada-restaurant-analytics",
@@ -31,7 +30,6 @@ const PROJECTS = [
     tags: ["SQL Server", "Docker", "Power BI", "Python", "APIs"],
     repo: "https://github.com/alekivetz/canada-restaurant-analytics",
     accent: "amber",
-    swatch: ["#c98a4b", "#7a4a2a", "#3a2418"],
   },
   {
     id: "go-predict",
@@ -42,7 +40,6 @@ const PROJECTS = [
     tags: ["scikit-learn", "MLflow", "DVC", "Docker", "GCP", "Flask", "Streamlit", "Python", "Power BI"],
     repo: "https://github.com/alekivetz/go-predict",
     accent: "mauve",
-    swatch: ["#b07db5", "#6a3e70", "#341e38"],
   },
   {
     id: "banff-traffic-management",
@@ -53,7 +50,6 @@ const PROJECTS = [
     tags: ["XGBoost", "Streamlit", "GCP", "RAG", "Python"],
     repo: "https://github.com/alekivetz/banff-traffic-management",
     accent: "forest",
-    swatch: ["#7a9e72", "#3e5a3a", "#1e2e1c"],
   },
   {
     id: "lego-piece-detection",
@@ -64,7 +60,6 @@ const PROJECTS = [
     tags: ["Python", "OpenCV", "PyTorch", "Faster R-CNN", "Computer Vision"],
     repo: "https://github.com/alekivetz/lego-piece-detection",
     accent: "steel",
-    swatch: ["#6a8eb5", "#3a5470", "#1e2e3e"],
   },
 ];
 
