@@ -1,5 +1,3 @@
-// Angela Lekivetz, real project and profile data.
-
 const PROFILE = {
   name: "Angela Lekivetz",
   role: "Data Analyst · ML Practitioner · Data Engineer",
@@ -14,6 +12,17 @@ const PROFILE = {
 
 const PROJECTS = [
   {
+    id: "canadian-labour-analytics",
+    title: "Canadian Labour Analytics",
+    context: "Personal Project · Mar to Apr 2026",
+    blurb:
+      "Population-level labour-market forecasting on 7.4M rows of StatsCan LFS microdata in Snowflake. Built a dbt Core medallion architecture with survey-weighted gold tables, kept compute under a $3 X-Small warehouse budget. Six-page Power BI dashboard tracks unemployment shifts across five years.",
+    tags: ["Snowflake", "dbt Core", "Python", "Power BI"],
+    repo: "https://github.com/alekivetz/canadian-labour-analytics",
+    accent: "teal",
+    swatch: ["#5a9e8a", "#2e5a50", "#162e28"],
+  },
+  {
     id: "canada-restaurant-analytics",
     title: "Canada Restaurant Analytics",
     context: "Personal Project · Feb to Mar 2026",
@@ -25,26 +34,15 @@ const PROJECTS = [
     swatch: ["#c98a4b", "#7a4a2a", "#3a2418"],
   },
   {
-    id: "canadian-labour-analytics",
-    title: "Canadian Labour Analytics",
-    context: "Personal Project · Mar to Apr 2026",
-    blurb:
-      "Population-level labour-market forecasting on 7.4M rows of StatsCan LFS microdata in Snowflake. Built a dbt Core medallion architecture with survey-weighted gold tables, kept compute under a $3 X-Small warehouse budget. Six-page Power BI dashboard tracks unemployment shifts across five years.",
-    tags: ["Snowflake", "dbt Core", "Python", "Power BI"],
-    repo: "https://github.com/alekivetz/canadian-labour-analytics",
-    accent: "sage",
-    swatch: ["#8aa37a", "#4a5a3e", "#2a3024"],
-  },
-  {
     id: "go-predict",
     title: "GoPredict · Vehicle Days on Market",
     context: "NorQuest College · Jan to Dec 2025",
     blurb:
       "Segmented Random Forest forecasting days on market for a major Canadian dealership network. R² 0.82 to 0.89 across three MSRP tiers. Containerized full pipeline with MLflow plus DVC, deployed to GCP, served via Flask REST API with Swagger UI.",
-    tags: ["scikit-learn", "MLflow", "DVC", "Docker", "GCP", "Flask", "Streamlit"],
+    tags: ["scikit-learn", "MLflow", "DVC", "Docker", "GCP", "Flask", "Streamlit", "Python", "Power BI"],
     repo: "https://github.com/alekivetz/go-predict",
-    accent: "rose",
-    swatch: ["#c47e7a", "#7a3e3a", "#3a201f"],
+    accent: "mauve",
+    swatch: ["#b07db5", "#6a3e70", "#341e38"],
   },
   {
     id: "banff-traffic-management",
@@ -54,8 +52,19 @@ const PROJECTS = [
       "Led integration of traffic and parking prediction, model explainability, and a RAG chatbot into a single Streamlit app for Banff National Park (4-person ML team). XGBoost regression on 7.3M rows of time-series data, with a 35% MAE reduction over baseline.",
     tags: ["XGBoost", "Streamlit", "GCP", "RAG", "Python"],
     repo: "https://github.com/alekivetz/banff-traffic-management",
-    accent: "amber",
-    swatch: ["#c98a4b", "#7a4a2a", "#3a2418"],
+    accent: "forest",
+    swatch: ["#7a9e72", "#3e5a3a", "#1e2e1c"],
+  },
+  {
+    id: "lego-piece-detection",
+    title: "LEGO Piece Detection & Counting",
+    context: "NorQuest College · Sept to Dec 2025",
+    blurb:
+      "Two-phase computer vision pipeline for detecting and counting LEGO pieces. Phase 1 benchmarked classical segmentation techniques (thresholding, edge detection, color-based) using OpenCV. Phase 2 fine-tuned Faster R-CNN on a 600-class Kaggle LEGO dataset, achieving mAP@0.5 of 0.964 and precision of 0.958.",
+    tags: ["Python", "OpenCV", "PyTorch", "Faster R-CNN", "Computer Vision"],
+    repo: "https://github.com/alekivetz/lego-piece-detection",
+    accent: "steel",
+    swatch: ["#6a8eb5", "#3a5470", "#1e2e3e"],
   },
 ];
 
