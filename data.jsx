@@ -56,7 +56,7 @@ const PROJECTS = [
     title: "LEGO Piece Detection & Counting",
     context: "NorQuest College · Sept to Dec 2025",
     blurb:
-      "Two-phase computer vision pipeline for detecting and counting LEGO pieces. Phase 1 benchmarked classical segmentation techniques (thresholding, edge detection, color-based) using OpenCV. Phase 2 fine-tuned Faster R-CNN on a 600-class Kaggle LEGO dataset, achieving mAP@0.5 of 0.964 and precision of 0.958.",
+      "Two-phase computer vision pipeline for detecting and counting LEGO pieces. Phase 1 benchmarked classical segmentation techniques (thresholding, edge detection, color-based) using OpenCV. Phase 2 fine-tuned Faster R-CNN on a 600-class Kaggle LEGO dataset, achieving mAP@0.5 of 0.976 and precision of 0.935.",
     tags: ["Python", "OpenCV", "PyTorch", "Faster R-CNN", "Computer Vision"],
     repo: "https://github.com/alekivetz/lego-piece-detection",
     accent: "steel",
