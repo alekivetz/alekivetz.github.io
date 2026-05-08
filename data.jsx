@@ -61,6 +61,16 @@ const PROJECTS = [
     repo: "https://github.com/alekivetz/lego-piece-detection",
     accent: "steel",
   },
+  {
+    id: "hydrogen-quest",
+    title: "Hydrogen Quest",
+    context: "NorQuest College · Sept to Dec 2024",
+    blurb:
+      "Pygame simulation game set across Western Canada where players build a sustainable hydrogen transportation network. Collect fuel cells, construct refuelling stations, and convert fossil fuel vehicles to reach 5,000 hydrogen points across 5 cities.",
+    tags: ["Python", "Pygame"],
+    repo: "https://github.com/alekivetz/Hydrogen-Quest",
+    accent: "coral",
+  },
 ];
 
 window.PROFILE = PROFILE;

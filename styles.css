@@ -21,11 +21,12 @@
     --blue: #3d9fa8;
   
     /* Per-card accents */
-    --teal: #3dcfb8;    /* bright teal-green */
-    --amber: #3a8fd4;   /* medium blue */
-    --mauve: #7a6ed4;   /* blue-purple */
-    --forest: #2db8c8;  /* cyan */
-    --steel: #5ab5e0;   /* sky blue */
+    --teal: #3dcfb8;   
+    --amber: #3a8fd4;  
+    --mauve: #7a6ed4;   
+    --forest: #4dbd6e;
+    --steel: #5ab5e0;   
+    --coral: #d4635a;
   
     --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     --mono: "JetBrains Mono", "SF Mono", Menlo, ui-monospace, monospace;
