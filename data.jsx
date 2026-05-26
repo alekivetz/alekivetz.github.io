@@ -12,6 +12,16 @@ const PROFILE = {
 
 const PROJECTS = [
   {
+  id: "injury-intelligence",
+  title: "Injury Intelligence",
+  context: "Personal Project · May 2026",
+  blurb:
+    "NLP pipeline over 4,427 OSHA severe injury reports. Text classification comparing TF-IDF + Logistic Regression against a fine-tuned DistilBERT model, tracked with MLflow. RAG Q&A interface embeds narratives with sentence-transformers into a FAISS index, with Claude answering queries grounded in retrieved records.",
+  tags: ["Python", "HuggingFace", "FAISS", "MLflow", "Anthropic", "Streamlit"],
+  repo: "https://github.com/alekivetz/injury-intelligence",
+  accent: "rose",
+  },
+  {
     id: "canadian-labour-analytics",
     title: "Canadian Labour Analytics",
     context: "Personal Project · Mar to Apr 2026",
