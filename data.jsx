@@ -24,7 +24,7 @@ const PROJECTS = [
   {
     id: "canadian-labour-analytics",
     title: "Canadian Labour Analytics",
-    context: "Personal Project · Mar to Apr 2026",
+    context: "Personal Project · Apr 2026",
     blurb:
       "Population-level labour-market forecasting on 7.4M rows of StatsCan LFS microdata in Snowflake. Built a dbt Core medallion architecture with survey-weighted gold tables, kept compute under a $3 X-Small warehouse budget. Six-page Power BI dashboard tracks unemployment shifts across five years.",
     tags: ["Snowflake", "dbt Core", "Python", "Power BI"],
@@ -34,7 +34,7 @@ const PROJECTS = [
   {
     id: "canada-restaurant-analytics",
     title: "Canada Restaurant Analytics",
-    context: "Personal Project · Feb to Mar 2026",
+    context: "Personal Project · Mar 2026",
     blurb:
       "Three-layer medallion architecture in SQL Server unifying Google Places, Yelp Fusion, and StatsCan census data into a competitive intelligence platform. 2,332 linked restaurants across 178 neighbourhoods, surfaced through a five-page Power BI dashboard.",
     tags: ["SQL Server", "Docker", "Power BI", "Python", "APIs"],
