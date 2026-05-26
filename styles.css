@@ -241,7 +241,7 @@
   .b-card-id { color: var(--ink-2); }
   .b-card-dot {
     width: 6px; height: 6px; border-radius: 50%;
-    background: var(--blue);
+    background: var(--card-accent, var(--blue));
     box-shadow: 0 0 8px rgba(74,144,217,0.4);
   }
   .b-card-status { color: var(--ink-3); }
@@ -316,8 +316,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
-  .b-card-hover-cta { color: var(--blue); }
-  
+  .b-card-hover-cta { color: var(--card-accent, var(--blue)); }
+    
   .b-card-title {
     font-family: var(--sans);
     font-weight: 600;
