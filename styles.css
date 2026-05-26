@@ -260,6 +260,7 @@
   .b-card[data-accent="forest"] { --card-accent: var(--forest); }
   .b-card[data-accent="steel"]  { --card-accent: var(--steel);  }
   .b-card[data-accent="coral"]  { --card-accent: var(--coral);  }
+  .b-card[data-accent="rose"]   { --card-accent: var(--rose);   }
   
   .b-spark {
     position: absolute; inset: 0;
