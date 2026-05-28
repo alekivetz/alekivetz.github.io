@@ -28,6 +28,7 @@
     --steel: #5ab5e0;   
     --coral: #d4635a;
     --rose: #c46b8a;
+    --cyan: #2ab8c4;
   
     --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     --mono: "JetBrains Mono", "SF Mono", Menlo, ui-monospace, monospace;
@@ -140,18 +141,25 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
     align-content: center;
     align-self: center;
   }
-
+  .b-stack-break {
+    width: 100%;
+    height: 0;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
   .b-hero-stack li {
     font-family: var(--mono);
     font-size: 12px;
     color: var(--ink-2);
     background: var(--bg-1);
     border: 1px solid var(--line-soft);
-    padding: 6px 12px;
+    padding: 6px 16px;
     border-radius: 3px;
     letter-spacing: 0.04em;
   }
@@ -261,6 +269,7 @@
   .b-card[data-accent="steel"]  { --card-accent: var(--steel);  }
   .b-card[data-accent="coral"]  { --card-accent: var(--coral);  }
   .b-card[data-accent="rose"]   { --card-accent: var(--rose);   }
+  .b-card[data-accent="cyan"]   { --card-accent: var(--cyan);   }
   
   .b-spark {
     position: absolute; inset: 0;

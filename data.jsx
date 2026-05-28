@@ -22,6 +22,16 @@ const PROJECTS = [
   accent: "rose",
   },
   {
+    id: "canada-health-indicators",
+    title: "Canada Health Indicators",
+    context: "Personal Project · Apr to May 2026",
+    blurb:
+      "End-to-end health analytics pipeline in Microsoft Fabric. Medallion architecture over 327K rows of Statistics Canada data across 32 indicators and 10 provinces from 2015 to 2022, modeled into a star schema and surfaced through a single-page Power BI dashboard with DAX measures and conditional formatting.",
+    tags: ["Microsoft Fabric", "PySpark", "Delta Lake", "Power BI", "DAX", "Python"],
+    repo: "https://github.com/alekivetz/canada-health-indicators",
+    accent: "cyan",
+  },
+  {
     id: "canadian-labour-analytics",
     title: "Canadian Labour Analytics",
     context: "Personal Project · Apr 2026",

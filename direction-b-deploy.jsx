@@ -97,16 +97,26 @@ function DirectionBDeploy() {
         <ul className="b-hero-stack">
           <li>Python</li>
           <li>SQL</li>
-          <li>Snowflake</li>
-          <li>dbt</li>
-          <li>SQL Server</li>
-          <li>Power BI</li>
-          <li>Docker</li>
-          <li>GCP</li>
-          <li>Git</li>
+          <li>PySpark</li>
           <li>pandas</li>
+          <li>Docker</li>
+          <li>Git</li>
+          <li className="b-stack-break" />
+          <li>Snowflake</li>
+          <li>Microsoft Fabric</li>
+          <li>GCP</li>
+          <li>dbt</li>
+          <li className="b-stack-break" />
+          <li>Power BI</li>
+          <li>DAX</li>
+          <li>Streamlit</li>
+          <li>Flask</li>
+          <li className="b-stack-break" />
           <li>scikit-learn</li>
           <li>XGBoost</li>
+          <li>MLflow</li>
+          <li>DVC</li>
+          <li>HuggingFace</li>
         </ul>
       </section>
 
