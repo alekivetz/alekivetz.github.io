@@ -72,8 +72,7 @@ function DirectionBDeploy() {
     return () => observer.disconnect();
   }, []);
 
-  const allTags = Array.from(new Set(projects.flatMap((x) => x.tags))).sort();
-  const visible =
+  const allTags = Array.from(new Set(projects.flatMap((x) => x.tags))).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));  const visible =
     filter === "all" ? projects : projects.filter((x) => x.tags.includes(filter));
 
   return (
