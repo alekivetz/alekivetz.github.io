@@ -100,6 +100,8 @@ function DirectionBDeploy() {
           <li>PySpark</li>
           <li>pandas</li>
           <li>Docker</li>
+          <li>Kafka</li>
+          <li>Avro</li>
           <li>Git</li>
           <li className="b-stack-break" />
           <li>Snowflake</li>
