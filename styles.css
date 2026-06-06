@@ -29,6 +29,7 @@
     --coral: #d4635a;
     --rose: #c46b8a;
     --cyan: #2ab8c4;
+    --violet: #9b6dd4;
   
     --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
     --mono: "JetBrains Mono", "SF Mono", Menlo, ui-monospace, monospace;
@@ -270,6 +271,7 @@
   .b-card[data-accent="coral"]  { --card-accent: var(--coral);  }
   .b-card[data-accent="rose"]   { --card-accent: var(--rose);   }
   .b-card[data-accent="cyan"]   { --card-accent: var(--cyan);   }
+  .b-card[data-accent="violet"] { --card-accent: var(--violet); }
   
   .b-spark {
     position: absolute; inset: 0;

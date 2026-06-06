@@ -12,6 +12,16 @@ const PROFILE = {
 
 const PROJECTS = [
   {
+    id: "kafka-streaming-pipeline",
+    title: "Kafka Streaming Pipeline",
+    context: "Personal Project · Jun 2026",
+    blurb:
+      "End-to-end real-time streaming pipeline simulating a restaurant POS system. A Python simulator generates order and payment events serialized with Avro schemas, produced to Confluent Cloud Kafka, and processed by two independent consumer groups writing to Supabase PostgreSQL. Live Streamlit dashboard refreshes every minute.",
+    tags: ["Kafka", "Avro", "Python", "PostgreSQL", "Streamlit", "Docker", "Confluent Cloud"],
+    repo: "https://github.com/alekivetz/kafka-streaming-pipeline",
+    accent: "violet",
+  },
+  {
   id: "injury-intelligence",
   title: "Injury Intelligence",
   context: "Personal Project · May 2026",
