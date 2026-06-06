@@ -99,15 +99,13 @@ function DirectionBDeploy() {
           <li>SQL</li>
           <li>PySpark</li>
           <li>pandas</li>
-          <li>Docker</li>
           <li>Kafka</li>
-          <li>Avro</li>
-          <li>Git</li>
           <li className="b-stack-break" />
+          <li>Docker</li>
+          <li>Git</li>
           <li>Snowflake</li>
           <li>Microsoft Fabric</li>
           <li>GCP</li>
-          <li>dbt</li>
           <li className="b-stack-break" />
           <li>Power BI</li>
           <li>DAX</li>
